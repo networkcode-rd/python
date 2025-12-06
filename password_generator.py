@@ -4,65 +4,26 @@ numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 print("Welcome to the PyPassword Generator!")
-nr_letters = int(input("How many letters would you like in your password?\n"))
-nr_symbols = int(input(f"How many symbols would you like?\n"))
-<<<<<<< HEAD
-nr_numbers = int(input(f"How many numbers would you like?\n"))list-location
-=======
-nr_numbers = int(input(f"How many numbers would you like?\n"))
->>>>>>> refs/remotes/origin/main
-#
-# # easy level:-
-# # password = ""
-# # for char in range(1,nr_letters + 1):
-# #     random_char = random.choice(letters)
-# #     password += random_char
-# #     print(password)
-#
-# # password = ""
-# # for char in range(1,nr_letters + 1):
-# #     password += random.choice(letters)
-# #
-# # for char in range(1, nr_numbers + 1):
-# #     password += random.choice(numbers)
-# #
-# # for char in range (1, nr_symbols + 1):
-# #     password += random.choice(numbers)
-# #
-# # print(password)
-#
-# #=====================================
-#
-# password = ""
-# for char in range(0,nr_letters):
-#     password += random.choice(letters)
-#
-# for char in range(0, nr_numbers):
-#     password += random.choice(numbers)
-#
-# for char in range (0, nr_symbols):
-#     password += random.choice(numbers)
-#
-# print(password)
-# #=====================================
-#next level
+pg_letters = int(input("How many letters you would like to have in your password, give us a count?\n"))
+pg_numbers = int(input ("How many numbers you would like to have in your password, give us a count?\n"))
+pg_symbols = int(input("How many special characters you would like to have it in your password, give us a number?\n"))
+
 password_list = []
-for char in range(0,nr_letters):
+
+for count in range(0,pg_letters):
     password_list += random.choice(letters)
 
-for char in range(0, nr_numbers):
+for count in range(0, pg_numbers):
     password_list += random.choice(numbers)
 
-for char in range (0, nr_symbols):
+for count in range(0,pg_symbols):
     password_list += random.choice(symbols)
 
-# print(password_list)
-# random.shuffle(password_list)
+random.shuffle(password_list)
 # print(password_list)
 
 password = ""
 for char in password_list:
     password += char
 
-print(f"Your password is: {password}")
-#=====================================
+print(f" Your password is {password}")
