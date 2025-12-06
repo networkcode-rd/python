@@ -1,2 +1,2 @@
 # python
-Learn and Code on Python
+Learn to Code using Python
