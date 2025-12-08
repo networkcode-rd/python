@@ -1,5 +1,6 @@
 random_year = int(input("Enter the year: "))
 def is_leap_year(random_year):
+    """ This function will check for leap year based on user input"""
     if random_year % 400 == 0:
         return True
     elif random_year % 100 == 0:
